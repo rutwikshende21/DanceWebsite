@@ -1,0 +1,24 @@
+--create a new repository(private) for your project on github--
+--open git bash in your project folder--
+--then perform following commands in git bash--
+
+git config --global user.name "Rutwik Shende"
+git config --global user.email "rutwikshende21@gmail.com"
+touch .gitignore             --then write the filenames in .gitignore file which you dont want to upload on your github repository--
+git init
+git add .
+git commit -m "Initial Commit"
+git status		     --just to see status, not compulsory--
+git remote add origin <git@github.com:rutwikshende21/DanceWebsite.git>		--<ssh path of your github repository>--
+git push origin master		--Are you sure you want to continue connecting (yes/no/[fingerprint])? yes--
+
+
+--Perform following process only if you dont have any ssh key--
+--create a ssh key on github(if you dont have any)--
+ssh-keygen -t rsa -b 4096 -C "rutwikshende21@gmail.com"		--tap Enter Enter Enter and your ssh key will be generated--
+cat </c/Users/rutwi/.ssh/id_rsa.pub>				--<path of your public key generated during above command procedure>--
+--then copy the ssh key generated and save it as your github ssh key on your github--
+
+
+
+
